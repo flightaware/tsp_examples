@@ -4,9 +4,9 @@
 
 This example shows how to use upvar to pass the name of an array into a tsp::proc definition, a common usage pattern in Tcl.
 
-## array_broken.tcl
+## array2.tcl
 
-This example attempts to add "info exists" to check on the presence of an array element fails to compile.
+This example adds "info exists" to check on the presence of an array element and needs the variable name argument to be quoted, like [info exists "foo(bar)"] to work.
 
 ## lrandom.tcl
 

@@ -5,10 +5,8 @@
 # the #tsp::procdef and "array", which _array is upvar'ed to, is
 # defined as a tsp::array
 #
-# THIS ONE HAS PROBLEMS
-#
-# the call to "info exists" fails because the argument is an array reference.
-# info exists on array elements is going to be hard to do without
+# note how the call to "info exists", the argument has to be passed as a
+# quoted string in order to work.
 #
 # also "incr array($key) $value" doesn't work because tsp wants a scalar
 # for the variable name.  this is worked around in the code below.
@@ -26,7 +24,7 @@ tsp::proc aset {_array key value} {
 	
 	upvar $_array array
 
-	set b [info exists array($key)]
+	set b [info exists "array($key)"]
 	if {$b} {
 
 		#incr array($key) $value
