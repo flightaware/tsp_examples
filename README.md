@@ -2,8 +2,6 @@
 
 These are examples for the Tcl Static Prime compiler by Tom Poindexter at https://github.com/tpoindex/tsp
 
-[Introduction](https://github.com/tpoindex/tsp/blob/master/docs/introduction.md)
-
 ## array.tcl
 
 [This example](https://github.com/flightaware/tsp_examples/blob/master/array.tcl) shows how to use upvar to pass the name of an array into a tsp::proc definition, a common usage pattern in Tcl.
