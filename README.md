@@ -10,6 +10,13 @@ These are examples for the Tcl Static Prime compiler by Tom Poindexter at https:
 
 This example [adds](https://github.com/flightaware/tsp_examples/blob/master/array2.tcl) "info exists" to check on the presence of an array element and needs the variable name argument to be quoted, like [info exists "foo(bar)"] to work.
 
+## latlons.tcl
+
+This [provides](https://github.com/flightaware/tsp_examples/blob/master/latlons.tcl) a proc to calculate the distance between a pair of latitudes and longitues and a tsp::proc equivalent and times runs of the two.
+
+The tsp version seems to be about 5X faster.
+
+
 ## lrandom.tcl
 
 This provides an [lrandrom proc](https://github.com/flightaware/tsp_examples/blob/master/lrandom.tcl) cribbed from the Tcl wiki and a tsp::proc equivalent and times runs of the two.
